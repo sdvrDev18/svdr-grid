@@ -39,134 +39,164 @@ tbody tr:hover {
   width: inherit;
   display: flex;
 }
+
 .table-filter-sub-section {
   margin-right: 25px;
   display: grid;
+  margin-top: 5px;
 }
+
 .table-filter-label {
   font-weight: normal;
-    font-size: 12px;
+  font-size: 12px;
   width: 90px;
   text-align: center;
   margin-top: auto;
 }
-.table-filter-dropdown{
+
+.table-filter-dropdown {
   border-top: none;
   border-right: none;
   border-left: none;
   font-weight: bold;
-    font-size: 13px;
+  font-size: 13px;
   width: 80px;
   text-align: center;
   background-color: transparent;
   margin-bottom: auto;
   outline: none;
-    border-bottom: 1px solid black;
-    margin-left: auto;
+  border-bottom: 1px solid black;
+  margin-left: auto;
 }
-.table-filter-close-btn:hover {
-  /* border-radius: 50%;
+
+.table-filter-close-btn {
+  border-radius: 50%;
   height: 25px;
   width: 25px;
   margin-top: auto;
-  margin-bottom: auto; */
-  color: red;
-  background-color: blue;
+  margin-bottom: auto;
 }
-.table-filter-close-btn img{
-  border: 1px solid red;
+
+.table-filter-close-btn img {
+  margin-left: -6px;
+  margin-top: -1.5px;
 }
+
 .collapsible_invisible {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
 .collapsible_visible {
   padding: 0 18px;
   overflow: hidden;
   background-color: #f1f1f1;
   display: contents;
-  height:250px;
+  height: 250px;
 }
+
 .pagination_main_section .MuiTablePagination-toolbar {
   background-color: #f1f1f1;
   margin: auto;
   min-height: 30px;
   align-items: center;
   border: 1px solid rgba(45, 58, 75, 0.1);
-} 
-.pagination_main_section .MuiTablePagination-selectLabel, .MuiTablePagination-displayedRows  {
+}
+
+.pagination_main_section .MuiTablePagination-selectLabel,
+.MuiTablePagination-displayedRows {
   margin: auto;
 }
+
 .table-sort-up-button {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 4px solid rgb(99, 115, 129);
   margin-bottom: 1px;
 }
+
 .table-sort-down-button {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 4px solid rgb(99, 115, 129);
   margin-top: 1px;
 }
-.header-footer-style {
+
+.table-pagination {
   background: rgb(249, 250, 251);
   border-radius: 4px 4px 0px 0px;
   border: 1px solid rgb(196, 205, 213);
-  height: 40px;
-}
-.table-pagination {
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	border-radius: 0px;
-	border: 1px solid rgb(200, 213, 219);
-	height: 32px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.table-pagination label {
-	margin: 10px 5px;
+.table-pagination .pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background: linear-gradient(140deg, rgb(161, 0, 255) 30%, rgb(0, 186, 255) 85%);
+  border-color: #005cbf;
 }
 
-.table-pagination .pagination {
-	display: inline-block;
-	padding: 0;
-	border-radius: 4px;
-  margin: auto 0;
+.grid-row-style:nth-child(odd) {
+  background-color: #fefefe;
 }
 
-.table-pagination .pagination>li {
-	display: inline;
+.grid-row-style:nth-child(even) {
+  background-color: #fafafc;
 }
 
-.table-pagination .pagination>li:first-child>a, .pagination>li:first-child>span {
-	border-bottom-left-radius: 4px;
-	border-top-left-radius: 4px;
+.table-pagination-input {
+  margin-right: 6px;
+  text-align: center;
+  width: 70%;
+  padding: 7px 7px;
+  box-sizing: border-box;
+  border: 1px solid #9b9898;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 4px;
+  font-size: 12px;
+  color: rgb(91 99 106);
+  transition: width 0.4s ease-in-out;
+  background-color: white;
 }
 
-.table-pagination .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
-	z-index: 3;
-	color: #fff;
-	cursor: default;
-	background: linear-gradient(-225deg, rgb(161, 0, 255) 0%, rgb(0, 186, 255) 100%);
-	border-color: #005cbf;
+.table-pagination-input::-webkit-outer-spin-button,
+.table-pagination-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.table-pagination .pagination>li>a, .pagination>li>span {
-	position: relative;
-	float: left;
-	padding: 3% 12px;
-	line-height: 1.42857143;
-	text-decoration: none;
-	color: #337ab7;
-	border: 1px solid #ddd;
-  font-size: 11px;
-  border-radius: 2px;
+.no-collapse-data {
+  color: rgb(213, 0, 47);
+  font-size: 12px;
+  display: flex;
+  height: inherit;
+  width: fit-content;
+  margin: auto;
+  align-items: center;
+  font-family: Graphik-Medium;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 14px;
 }
 
+.pagination-total-rows-label {
+  font-size: small;
+  font-family: 'Graphik-Regular';
+  color: lightslategrey;
+}
