@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import filterIcon from '../../images/filter-outline.svg';
+import filterIcon from '../Images/filter-outline.svg';
 import { withStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';
 import GridFilter from './gridFilter';
