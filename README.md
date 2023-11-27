@@ -34,7 +34,6 @@ let rowData = [
         { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36, fullName: "Full8" },
         { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" }
     ]
----------------------------------------------------------------------------------------------------------------------------------
 
 ************************************* COLUMN-HEADER *************************************
 Prop name: columnHeaders={array-of-column-objects} 
@@ -58,15 +57,15 @@ Properties:
     4. sortable: whether the sort option is visible of not
     5. visible: By default 'visible = true'. Make 'visible = false' to hide entire column from screen. 
                 (Note: for tables where 'id' is not required to be shown in screen, use visible false)
----------------------------------------------------------------------------------------------------------------------------------
+
 
 ************************************* FILTER *************************************
     1. Prop name: filter={true} 
----------------------------------------------------------------------------------------------------------------------------------
+
 
 ************************************* SORTING *************************************
     1. Make 'sortable=true' in column headers
----------------------------------------------------------------------------------------------------------------------------------
+
 
 ************************************* CHECKBOX *************************************
     1. Prop name: checkbox={true} 
@@ -81,14 +80,14 @@ Properties:
                     // Whenver any checkbox is selected/unselected 'selectedRows' will return the row object.
                     // For multiple checkbox selection 'selectedRows' will be Array-of-Objects.
                     // Default value is empty array []                         
----------------------------------------------------------------------------------------------------------------------------------
+
 
 ************************************* PAGINATION: CLIENT-SIDE *************************************
     1. Prop name: paginationType={'client-side'} // default = 'client-side', if prop is not specified
     2. Prop name: rowsPerPage={positive-integer} // default = 8, if prop is not specified
     3. Prop name: totalRows={rowData.length}
     4. Prop name: pageRangeDisplayed={any-positive-integer} // default = 5, if prop is not specified
----------------------------------------------------------------------------------------------------------------------------------
+
 
 ************************************* PAGINATION: SERVER-SIDE *************************************
     1. Prop name: paginationType={'server-side'} // default = 'client-side', if prop is not specified
@@ -115,7 +114,7 @@ Properties:
     8. 'ref' is used to trigger the grid update after new data is received from API.
     9. For functional component: 'const gridRef = React.useRef(null)' (Note: inside function component before return)
     10. For class component: 'this.gridRef = React.createRef()' (Note: inside constructor)
----------------------------------------------------------------------------------------------------------------------------------
+
 
 ************************************* COLLAPSIBLE *************************************
     1. Prop name: collapsible={true} 
@@ -128,8 +127,6 @@ Properties:
                 let rowData = [{ id: 1, lastName: 'Snow', firstName: 'Jon', age: 35, fullName: "Full1", collapse: collapseArea },
                                 { id: 2, lastName: 'Lannister', age: 42, firstName: 'Cersei', fullName: "Full2" }]
 
-
----------------------------------------------------------------------------------------------------------------------------------
 
 ************************************* BUTTONS IN ROWS *************************************
     1. Create the button variable using an <img /> tag with any variable name as shown below:
@@ -181,7 +178,5 @@ Properties:
             { field: 'button2', headerName: '', width: '90px', sortable: false }
         ];
 
----------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------- END ---------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------
+******************************************* END ****************************************
 
