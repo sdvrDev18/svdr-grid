@@ -1,0 +1,182 @@
+import btnIcon from '../../images/download_file.png';
+import btnIcon2 from '../../images/ic_trashcan_slate.svg';
+
+const collapseArea1 =
+            <table style={{ width: '400px', height: '200px', border: '1px solid red' }}>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+            </table>
+
+        const collapseArea2 = <div style={{ width: '200px', height: '200px', border: '1px solid red' }}>Collapse Area2</div>
+
+        const collapseArea3 = <div style={{ width: '200px', height: '200px', border: '1px solid red' }}>Collapse Area3</div>
+
+        const tableButton1 = <img src={btnIcon} alt="table-button" name="tableButton" width="20" height="20" />
+
+        const tableButton2 = <img src={btnIcon2} alt="table-button" name="tableButton" width="20" height="20" />
+
+        let rowData = [
+            { id: 1, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1", collapse: collapseArea1, button1: tableButton1, button2: tableButton2 },
+            { id: 2, lastName: 'Louis', age: 42, firstName: 'Cersei', fullName: "Full2", button1: tableButton1, button2: tableButton2 },
+            { id: 3, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 4, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4", collapse: collapseArea2 },
+            { id: 5, lastName: 'Tim', firstName: null, fullName: "Full5" },
+            { id: 6, lastName: 'Mike', firstName: '', age: 150 },
+            { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 456, fullName: "Full7" },
+            { id: 8, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 10, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1", collapse: collapseArea3 },
+            { id: 11, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 13, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 14, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 15, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 16, lastName: 'Mike', fullName: "Full5" },
+            { id: 17, lastName: 'Dan', firstName: 'Dan', age: 456, fullName: "Full5" },
+            { id: 18, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 19, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 20, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 21, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 22, lastName: 'Louis', age: 42, firstName: 'Cersei', fullName: "Full2" },
+            { id: 23, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 24, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 25, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 26, lastName: 'Mike', age: 150 },
+            { id: 27, lastName: 'Clifford', firstName: 'Ferrara', age: 456, fullName: "Full7" },
+            { id: 28, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 29, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 30, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 31, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 32, lastName: 'Louis', age: 42, firstName: 'Cersei', fullName: "Full2" },
+            { id: 33, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 34, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 35, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 36, lastName: 'Mike', age: 150 },
+            { id: 37, lastName: 'Clifford', firstName: 'Ferrara', age: 456, fullName: "Full7" },
+            { id: 38, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 39, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 40, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 41, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 42, lastName: 'Louis', age: 42, firstName: 'Cersei', fullName: "Full2" },
+            { id: 43, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 44, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 45, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 46, lastName: 'Mike', age: 150 },
+            { id: 47, lastName: 'Clifford', firstName: 'Ferrara', age: 456, fullName: "Full7" },
+            { id: 48, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 49, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 10, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1", collapse: collapseArea3 },
+            { id: 11, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 13, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 14, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 15, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 16, lastName: 'Mike', fullName: "Full5" },
+            { id: 17, lastName: 'Dan', firstName: 'Dan', age: 456, fullName: "Full5" },
+            { id: 18, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 19, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 20, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 21, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 22, lastName: 'Louis', age: 42, firstName: 'Cersei', fullName: "Full2" },
+            { id: 23, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 24, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 25, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 26, lastName: 'Mike', age: 150 },
+            { id: 27, lastName: 'Clifford', firstName: 'Ferrara', age: 456, fullName: "Full7" },
+            { id: 28, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 29, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 30, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 31, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 32, lastName: 'Louis', age: 42, firstName: 'Cersei', fullName: "Full2" },
+            { id: 33, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 34, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 35, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 36, lastName: 'Mike', age: 150 },
+            { id: 37, lastName: 'Clifford', firstName: 'Ferrara', age: 456, fullName: "Full7" },
+            { id: 38, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 39, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 40, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 41, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 42, lastName: 'Louis', age: 42, firstName: 'Cersei', fullName: "Full2" },
+            { id: 43, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 44, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 45, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 46, lastName: 'Mike', age: 150 },
+            { id: 47, lastName: 'Clifford', firstName: 'Ferrara', age: 456, fullName: "Full7" },
+            { id: 48, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 49, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 10, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1", collapse: collapseArea3 },
+            { id: 11, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 13, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 14, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 15, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 16, lastName: 'Mike', fullName: "Full5" },
+            { id: 17, lastName: 'Dan', firstName: 'Dan', age: 456, fullName: "Full5" },
+            { id: 18, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 19, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 20, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 21, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 22, lastName: 'Louis', age: 42, firstName: 'Cersei', fullName: "Full2" },
+            { id: 23, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 24, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 25, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 26, lastName: 'Mike', age: 150 },
+            { id: 27, lastName: 'Clifford', firstName: 'Ferrara', age: 456, fullName: "Full7" },
+            { id: 28, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 29, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 30, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 31, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 32, lastName: 'Louis', age: 42, firstName: 'Cersei', fullName: "Full2" },
+            { id: 33, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 34, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 35, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 36, lastName: 'Mike', age: 150 },
+            { id: 37, lastName: 'Clifford', firstName: 'Ferrara', age: 456, fullName: "Full7" },
+            { id: 38, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 39, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" },
+
+            { id: 40, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 41, lastName: 'Sam', firstName: 'Jon', age: 35, fullName: "Full1" },
+            { id: 42, lastName: 'Louis', age: 42, firstName: 'Cersei', fullName: "Full2" },
+            { id: 43, lastName: 'Louis', firstName: 'Jaime', age: 453, fullName: "Full3" },
+            { id: 44, lastName: 'Winchester', firstName: 'Arya', age: 455, fullName: "Full4" },
+            { id: 45, lastName: 'Tim', firstName: 'Dan', fullName: "Full5" },
+            { id: 46, lastName: 'Mike', age: 150 },
+            { id: 47, lastName: 'Clifford', firstName: 'Ferrara', age: 456, fullName: "Full7" },
+            { id: 48, lastName: 'Frances', firstName: 'Ross', age: 36, fullName: "Full8" },
+            { id: 49, lastName: 'Roxie', firstName: 'Harvey', age: 65, fullName: "Full9" }
+        ];
+
+        const columnHeaders = [
+            { field: 'id', headerName: 'ID', width: '70px', sortable: true, visible: true },
+            { field: 'lastName', headerName: 'Last name', width: '130px', sortable: true },
+            { field: 'firstName', headerName: 'First name', width: '130px', sortable: true },
+            { field: 'age', headerName: 'Age', width: '90px', sortable: true },
+            {
+                field: 'fullName', headerName: 'Full name', description: 'This column has a value getter and is not sortable.', sortable: true, width: '120px'
+            },
+            { field: 'button1', headerName: '', width: '90px', sortable: false },
+            { field: 'button2', headerName: '', width: '90px', sortable: false }
+        ];
