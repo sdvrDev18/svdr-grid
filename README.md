@@ -16,6 +16,7 @@ Features:
 FEATURE'S GUIDE:
 
 ************************************* ROW-DATA *************************************
+
 Prop name: rowData={array-of-row-objects} 
 
 Mandatory: 'id' field is Mandatory. If id field is not present in existing rowdata then push to rowdata.
@@ -36,6 +37,7 @@ let rowData = [
     ]
 
 ************************************* COLUMN-HEADER *************************************
+
 Prop name: columnHeaders={array-of-column-objects} 
 
 Mandatory: 'id' field is Mandatory. If 'id' field is not present and is pushed to rowdata then create object with property 
@@ -60,14 +62,17 @@ Properties:
 
 
 ************************************* FILTER *************************************
+    
     1. Prop name: filter={true} 
 
 
 ************************************* SORTING *************************************
+    
     1. Make 'sortable=true' in column headers
 
 
 ************************************* CHECKBOX *************************************
+    
     1. Prop name: checkbox={true} 
     2. Checkbox comes along with select-all/unselect-all checkbox
     3. For checkbox to work as expected 'id' field is mandatory. (Can be visible or invisible)
@@ -83,6 +88,7 @@ Properties:
 
 
 ************************************* PAGINATION: CLIENT-SIDE *************************************
+    
     1. Prop name: paginationType={'client-side'} // default = 'client-side', if prop is not specified
     2. Prop name: rowsPerPage={positive-integer} // default = 8, if prop is not specified
     3. Prop name: totalRows={rowData.length}
@@ -90,6 +96,7 @@ Properties:
 
 
 ************************************* PAGINATION: SERVER-SIDE *************************************
+    
     1. Prop name: paginationType={'server-side'} // default = 'client-side', if prop is not specified
     2. Prop name: rowsPerPage={any-positive-integer} // default = 8, if prop is not specified
     3. Prop name: totalRows={positive-integer} (Note: The total number of data, to be sent from the API )
@@ -117,6 +124,7 @@ Properties:
 
 
 ************************************* COLLAPSIBLE *************************************
+    
     1. Prop name: collapsible={true} 
     2. Create the required HTML element for corresponding row and add to 'collapse' property of rowData.
 
@@ -129,6 +137,7 @@ Properties:
 
 
 ************************************* BUTTONS IN ROWS *************************************
+    
     1. Create the button variable using an <img /> tag with any variable name as shown below:
         
         const tableButton1 = <img src={btnIcon} alt="table-button" name="tableButton" width="20" height="20" />
